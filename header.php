@@ -45,7 +45,6 @@
 	?>
 
 	
-
 	<div id="wrap"> <!-- Entire site in id=wrap -->
 		<div id="main"> <!-- Header and body in id=main -->
 			<div class="container">
