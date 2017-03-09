@@ -45,6 +45,7 @@
 /**/
 	.logo {
 		font-family: "Montserrat Light";
+		visibility: hidden;
 	}
 
 /*BOOTSTRAP NAVBAR************************************************************/
@@ -103,6 +104,11 @@
 	}
 
 	@media (max-width: 767px) {
+		/*TODO this logo class is incomplete... hi*/
+		.logo {
+			font-family: "Montserrat Light";
+			visibility: visible;
+		}
 	  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 	    color: #000000;
 	  }
