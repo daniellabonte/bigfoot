@@ -42,28 +42,32 @@
 		background-color: #333;
 	} 
 
-/**/
-	.logo {
+/*LOGO************************************************************************/
+	.logoSmall {
 		font-family: "Montserrat Light";
+	}
+	.logoBig {
+		font-family: "Montserrat Light";
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 	/*Resize hiding function*/
 	.hideSmall
 	{
-		/*hides the block*/
-		display: none;
+		display: none;    /*hides the block*/
 	}
 	/*Resize hiding function*/
 	.hideBig
 	{
-		/*hides the block*/
-		display: block;
+		display: block;   /*hides the block*/
 	}
 
 /*BOOTSTRAP NAVBAR************************************************************/
 	.navbar-default {
 	  background-color: #ffffff;
 	  border-color: #ffffff;
-	}
+	  margin: 0;
+	 }
 	.navbar-default .navbar-brand {
 	  color: #000000;
 	}
@@ -143,7 +147,7 @@
 	/*Center align*/
 	.navbar .navbar-nav {
     display: inline-block;
-    float: none;
+    float: none;	
 	}
 	.navbar .navbar-collapse {
 	    text-align: center;
