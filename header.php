@@ -77,7 +77,7 @@
 					</nav>
 				</header>
 				
-				<div>
+				<div style="background-color: red;">
 					<h1>HI</h1>
 					<p>this is content</p>
 				</div>
@@ -88,7 +88,7 @@
 
 	<div id="footer"> <!-- Footer in id=footer -->
 		<div class="container">
-			<p>hi</p>
+			<p>asdfasdfasdfasf</p>
 		</div>
 	</div><!-- END OF FOOTER -->
 
