@@ -60,7 +60,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand logo" href="javascript:void(0)">BIGfoot</a>
+							<a class="navbar-brand logo hideSmall" href="javascript:void(0)">BIGfoot</a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->

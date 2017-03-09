@@ -8,7 +8,7 @@
 				<div class="item active">
 					<img src="https://images2.alphacoders.com/700/70070.jpg">
 					<div class="carousel-caption">
-						<h2>Big City</h2>
+						<button>STUFF</button>
 					</div>
 				</div>
 
