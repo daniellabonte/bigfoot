@@ -1,44 +1,61 @@
 <?php include 'header.php'; ?>
-</div>
-<div id="asdf">
-	<p>Hi there</p>
-</div>
+</div><!-- Close container from header to get full page width -->
 
-	<div >
-		<p class="titleOverlay">Asdf</p>
+	<div class="target-ratio-resize">
+	<div class="center-div">
+		<p class="titleOverlay">About</p>
+		</div>
 	</div>
 
-<div class="container">
+<div class="container"><!-- Open container for page content -->
+
+<!-- CONTENT HERE -->
+
 <?php include 'footer.php'; ?>
 
 
 
 <style type="text/css">
 	
-	#asdf {
+
+	.target-ratio-resize {
+		max-width: 3840px; 	/* actual img width */
+		max-height: 1280px;	/* actual img height */
 		background-image: url('images/slide-07.jpg');
-		background-size: contain;
-		background-repeat: no-repeat;
-    width: 100%;
-    height: 0;
-    padding-top: 10%;
+		background-size: cover;
+		background-position: center;
+	}
+	.target-ratio-resize:after {
+		content: " ";
+		display: block; 
+		width: 100%; 
+		padding-top: 33.333%; /* 3:1 ratio */
+		min-height: 256px;
+	}
+
+	.center-div
+	{
+	  position: absolute;
+	  margin: auto;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
 	}
 
 	.titleOverlay {
 		font-family: "Montserrat Light";
 		color: white;
-		padding-top: 10px;
-		padding-left: 12px;
-		padding-bottom: 10px;
-		padding-right: 12px;
-		margin-top: 10px;
-		margin-left: 12px;
-		margin-bottom: 10px;
-		margin-right: 12px;
+		padding: 10%;
+		text-align: center;
+		display: inline-block;
 		font-size: 1.5em;
 		border-width: 5px;
 		border: solid;
 		border-color: white;
+
+
+    margin: auto;
 	}
 
 </style>
