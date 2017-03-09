@@ -20,6 +20,8 @@
 	
 	<!-- LOCAL CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/buttons.css"/>
+
 
 	<!-- JAVASCRIPT -->
 	<script src="js/functions.js"></script>
@@ -71,7 +73,7 @@
 								<li><a href="javascript:void(0)">Products</a></li>
 								<li><a href="javascript:void(0)">About</a></li>
 								<li><a href="javascript:void(0)">Who We Are</a></li>
-								<li><a href="javascript:void(0)">Contact</a></li>
+								<li><a href="contact.php">Contact</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</nav>

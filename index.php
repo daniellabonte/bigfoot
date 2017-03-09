@@ -6,33 +6,40 @@
 		<div class = "carousel-inner">
 			<!-- Image must be right size -->
 				<div class="item active">
-					<img src="https://images2.alphacoders.com/700/70070.jpg">
+					<img src="images/slide-01.jpg">
 					<div class="carousel-caption">
-						<button>STUFF</button>
+						<a class= "ghost-button">STUFF</a>
 					</div>
 				</div>
 
 				<div class="item ">
-					<img src="images/slide-01.jpg">
+					<img src="images/slide-02.jpg">
+					<div class="carousel-caption">
+						<a class= "ghost-button">STUFF2</a>
+					</div>
+				</div>
+				<div class="item ">
+					<img src="images/slide-03.jpg">
+					<div class="carousel-caption">
+						<a class= "ghost-button">STUFF3</a>
+					</div>
+				</div>
+				<div class="item ">
+					<img src="images/slide-04.jpg">
+					<div class="carousel-caption">
+						<a class= "ghost-button">STUFF4</a>
+					</div>
 				</div>
 
-				<div class="item ">
-					<img src="images/slide-01.jpg">
-				</div>
-				<div class="item ">
-					<img src="images/slide-01.jpg">
-				</div>
-				<div class="item ">
-					<img src="images/slide-01.jpg">
-				</div>
-				<div class="item ">
-					<img src="images/slide-01.jpg">
-				</div>
 
 			</div>
 
 		</div>
-	<div class="container"><!-- Reopen container for page contents -->
+		<style type="text/css">
+
+		</style>
+	<div class="container">
+	<!-- Reopen container for page contents -->
 
 	<!-- STUFF HERE -->
 
