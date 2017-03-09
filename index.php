@@ -13,11 +13,20 @@
 				</div>
 
 				<div class="item ">
-					<img src="https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg">
+					<img src="images/slide-01.jpg">
 				</div>
 
 				<div class="item ">
-					<img src="https://www.walldevil.com/wallpapers/a51/6115-wallpaper-cityscape-canada-city-toronto-images.jpg">
+					<img src="images/slide-01.jpg">
+				</div>
+				<div class="item ">
+					<img src="images/slide-01.jpg">
+				</div>
+				<div class="item ">
+					<img src="images/slide-01.jpg">
+				</div>
+				<div class="item ">
+					<img src="images/slide-01.jpg">
 				</div>
 
 			</div>
