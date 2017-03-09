@@ -1,0 +1,127 @@
+/*TEXT*************************************************************************/
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+	body {
+		font:Verdana;
+	}
+
+	/*h1,h2,h3,h4,h5,h6 {
+		font:"Montserrat ExtraLight", sans-serif;
+	}*/
+
+/*STICKY FOOTER****************************************************************/
+	/**
+	 * Sticky Footer Solution
+	 * by Steve Hatcher 
+	 * http://stever.ca
+	 * http://www.cssstickyfooter.com
+	 */
+
+	* {margin:0;padding:0;} 
+
+	/* must declare 0 margins on everything, also for main layout components use padding, not 
+	vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+	and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+	html, body {height: 100%;}
+
+	#wrap {
+		min-height: 100%;
+	}
+
+	#main {
+		overflow:auto;
+		padding-bottom: 180px; /* must be same height as the footer */
+		}  
+
+	#footer {
+		position: relative;
+		margin-top: -180px; /* negative value of footer height */
+		height: 180px;
+		clear:both;
+		background-color: #333;
+	} 
+
+/**/
+	.logo {
+		font-family: "Montserrat Light";
+	}
+
+/*BOOTSTRAP NAVBAR************************************************************/
+	.navbar-default {
+	  background-color: #ffffff;
+	  border-color: #ffffff;
+	}
+	.navbar-default .navbar-brand {
+	  color: #000000;
+	}
+	.navbar-default:hover,
+	.navbar-default:focus {
+	  color: #aee6ee;
+	}
+	.navbar-default .navbar-text {
+	  color: #000000;
+	}
+	.navbar-default .navbar-nav > li > a {
+	  color: #000000;
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+	  color: #aee6ee;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+	  color: #aee6ee;
+	  background-color: #ffffff;
+	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus {
+	  color: #aee6ee;
+	  background-color: #ffffff;
+	}
+	.navbar-default .navbar-toggle {
+	  border-color: #ffffff;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+	  background-color: #ffffff;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color: #000000;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+	  border-color: #000000;
+	}
+	.navbar-default .navbar-link {
+	  color: #000000;
+	}
+	.navbar-default .navbar-link:hover {
+	  color: #aee6ee;
+	}
+
+	@media (max-width: 767px) {
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: #000000;
+	  }
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	    color: #aee6ee;
+	  }
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+	    color: #aee6ee;
+	    background-color: #ffffff;
+	  }
+	}
+	/*Center align*/
+	.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+	}
+	.navbar .navbar-collapse {
+	    text-align: center;
+	}
