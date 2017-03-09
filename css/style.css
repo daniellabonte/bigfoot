@@ -63,6 +63,7 @@
 	.navbar-default {
 	  background-color: #ffffff;
 	  border-color: #ffffff;
+	  margin: 0;
 	}
 	.navbar-default .navbar-brand {
 	  color: #000000;
