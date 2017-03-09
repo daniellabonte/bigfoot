@@ -51,6 +51,7 @@
 
 				<header>
 <!-- ######## NAVBAR ######## -->
+					<div class="hideBig"><center><h1 class="logoBig">BIGfoot</h1></center></div>
 					<nav class="navbar navbar-default" role="navigation">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
@@ -60,7 +61,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand logo hideSmall " href="javascript:void(0)">BIGfoot</a>
+							<a class="navbar-brand logoSmall hideSmall " href="javascript:void(0)">BIGfoot</a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
