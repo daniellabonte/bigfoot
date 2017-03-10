@@ -15,6 +15,25 @@
 /*INDEX.PHP*******************************************************************/
 	
 /**/
-$('#filterButton').click(function(){ console.log("ASDF"); });
+
+	
 
 
+		
+
+/*jQUERY**********************************************************************/
+	$(document).ready(function(){
+
+	/*FILTERS*****************************************************************/
+		$('#filterButton').click(function() { ShowFilters() });
+		
+		$('#filterButton').hover(function() {
+			$(this).css('cursor','pointer');
+    });
+
+		function ShowFilters() {
+			console.log("Clicked yo");
+		};
+	/*****************************************************************FILTERS*/
+
+	});

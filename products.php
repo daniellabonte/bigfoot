@@ -7,8 +7,22 @@
 
 <?php include 'header.php'; ?>
 <br>
-<div class="col-sm-1"></div>
-<div id="filterButton" class="col-sm-2"><center><h1>Filter</h1></center></div>
+
+
+
+
+<div class="col-sm-2"></div>
+  <div id="filterButton" class="col-sm-2"><center>Filter</center>
+</div>
+<div class="w-100"></div>
+<dir>asdf</dir>
+
+
+
+
+
+
+
 
 <?php include 'footer.php'; ?>
 
