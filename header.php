@@ -35,7 +35,7 @@
 	<title><?php echo COMPANY_NAME; ?></title>
 
 	<!-- METADATA -->
-	<meta name="viewport"    content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+	<meta name="viewport"    content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="Author"      content="Kelley Scales, Ryan Ramkalawan, Joey Lees and Daniel Labonte">
 	<meta name="Filename"    content="<?php echo $filename; ?>">
 	<meta name="Date"        content="<?php echo $date; ?>">
@@ -51,9 +51,9 @@
 	
 	<div id="wrap"> <!-- Entire site in id=wrap -->
 		<div id="main"> <!-- Header and body in id=main -->
-			<div class="container">
+			
 
-				<header>
+				<header class="shadow">
 <!-- ######## NAVBAR ######## -->
 					<div class="hideBig"><center><h1 class="logoBig"><?php echo COMPANY_NAME; ?></h1></center></div>
 					<nav class="navbar navbar-default" role="navigation">
@@ -80,3 +80,4 @@
 						</div><!-- /.navbar-collapse -->
 					</nav>
 				</header>
+			<div class="container">

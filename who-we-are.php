@@ -10,7 +10,7 @@
 
 <div class="w3-display-container w3-content w3-center" style="max-width:3840px">
   <div class="img-center">
-  	<img class="w3-image" src="images/slide-06.jpg" alt="Me" width="3840" height="1280">
+  	<img class="w3-image" src="images/slide-05.jpg" alt="Me" width="3840" height="1280">
   </div>
   <div class="w3-display-middle w3-padding-xlarge w3-border w3-wide w3-center">
     <h1 class="montserrat-white"><?php echo strtolower($title); ?></h1>
