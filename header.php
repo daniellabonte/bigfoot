@@ -53,7 +53,7 @@
 
 				<header>
 <!-- ######## NAVBAR ######## -->
-					<div class="hideBig"><center><h1 class="logoBig">BIGfoot</h1></center></div>
+					<div class="hideBig"><center><h1 class="logoBig">BIGfoot Sock Co.</h1></center></div>
 					<nav class="navbar navbar-default" role="navigation">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
