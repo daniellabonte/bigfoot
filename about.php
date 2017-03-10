@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
 </div><!-- Close container from header to get full page width -->
 
-	<div class="target-ratio-resize">
+	<div class="target-ratio-resize"></div>
 		
-	</div>
+	
 <center><p class="titleOverlay">about</p></center>
 	
 <div class="container"><!-- Open container for page content -->

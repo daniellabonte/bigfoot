@@ -30,7 +30,7 @@
 	<title>BIGfoot Sock Co.</title>
 
 	<!-- METADATA -->
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="viewport"    content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
 	<meta name="Author"      content="Kelley Scales, Ryan Ramkalawan, Joey Lees and Daniel Labonte">
 	<meta name="Filename"    content="<?php echo $filename; ?>">
 	<meta name="Date"        content="<?php echo $date; ?>">

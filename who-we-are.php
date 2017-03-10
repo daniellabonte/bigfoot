@@ -17,6 +17,24 @@
 		color: white;
 	}
 
+
+
+
+
+.img-center img {
+    position: relative; /* allows repositioning */
+    left: 100%; /* move the whole width of the image to the right */
+    margin-left: -200%; /* magic! */
+}
+
+
+
+
+
+
+
+
+
 /*W3 STUFF*/
 
 .w3-display-container{
@@ -31,12 +49,13 @@
 
 .w3-content{
 	max-width:980px;
-	margin:auto
+	margin:auto;
+	overflow: hidden;
 }
 
 .img-center{
-	display:inline-block;
-	margin:auto;
+	text-align: center; /* ensures the image is always in the h-middle */
+    overflow: hidden; /* hide the cropped portion */
 }
 
 .w3-center{
