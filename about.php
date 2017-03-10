@@ -21,7 +21,9 @@
 
 <!-- CONTENT HERE -->
 <br>
-<center><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></center>
+<center><p>Have you ever struggled to find a good pair of socks to buy? Have you ever struggled with uncomfortable socks that just dont fit right? 
+Well fear no more, this website is dedicated to provding you the customer with a vast variety of quality socks for an affordable price.
+Gone are the days of reaching into your drawers, and pulling out unwanted socks. You can thank us whenever your comfortably walking around, its our pleasure. </p></center>
 <br>
 
 <?php include 'footer.php'; ?>

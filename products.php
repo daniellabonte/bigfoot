@@ -6,7 +6,13 @@
 ?>
 
 <?php include 'header.php'; ?>
-
-<div id="filterButton" class="col-sm-2"><center>Filter</center></div>
+<br>
+<div class="col-sm-1"></div>
+<div id="filterButton" class="col-sm-2"><center><h1>Filter</h1></center></div>
 
 <?php include 'footer.php'; ?>
+
+
+<script type="text/javascript">
+  //alert("asdf");
+</script>
