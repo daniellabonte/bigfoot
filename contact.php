@@ -25,9 +25,12 @@
 	{
 		width:100%;
 		margin: 7px;
+		border-radius: 0.3em;
+		max-width: 350px;
 	}
 	.Comment
 	{
+		border-radius: 0.3em;
 		width:100%;
 		margin: 10px;
 		height: 10em;
