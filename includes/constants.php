@@ -1,6 +1,8 @@
 
 <?php
 //Constants
+	define('CO_NAME',      'BIGfoot');
+	define('COMPANY_NAME', 'BIGfoot Sock Co.');
 
 /*DBas connect*****************************************************************/
 	define('DATABASE_HOST','localhost');
