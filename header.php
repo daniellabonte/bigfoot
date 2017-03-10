@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	
 	<!-- JAVASCRIPT -->
-	<script src="js/functions.js"></script>
+	<script type='text/javascript' src='js/functions.js'></script>
 
 	<!-- TITLE -->
 	<title><?php echo COMPANY_NAME; ?></title>
