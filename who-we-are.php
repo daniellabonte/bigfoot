@@ -18,8 +18,69 @@
 </div>
 
 <div class="container"><!-- Open container for rest of content -->
-
+<br>
 <!-- CONTENT HERE -->
+<div class="col-sm-12">
+<div class= "col-sm-6" style="max-width: 350px;">
+<img class ="icon" src="http://www.codingjohn.com/Catalog/Images/DefaultProfilePic.png">
+<br>
+<br>
+</div>
+<div class ="col-sm-6">
+<h3>Joey Lees</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+</div>
+
+
+<div class="col-sm-12">
+<div class= "col-sm-6" style="max-width: 350px;">
+<img class ="icon" src="http://www.codingjohn.com/Catalog/Images/DefaultProfilePic.png">
+<br>
+<br>
+</div>
+<div class ="col-sm-6">
+<h3>Daniel Labonté</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+</div>
+
+
+<div class="col-sm-12">
+<div class= "col-sm-6" style="max-width: 350px;">
+<img class ="icon" src="http://www.codingjohn.com/Catalog/Images/DefaultProfilePic.png">
+<br>
+<br>
+</div>
+
+<div class ="col-sm-6">
+<h3>Kelley Scalles</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+</div>
+
+
+<div class="col-sm-12">
+<div class= "col-sm-6" style="max-width: 350px;">
+<img class ="icon" src="http://www.codingjohn.com/Catalog/Images/DefaultProfilePic.png">
+<br>
+</div>
+<div class ="col-sm-6">
+<h3>Ryan R.</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+</div>
+
+
+<style type="text/css">
+
+  .icon
+  {
+    width: 100%;
+    height: auto; 
+  }
+
+</style>
 
 <?php include 'footer.php'; ?>
 
