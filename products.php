@@ -72,10 +72,60 @@
 
 
 
+  <div class="paginate 2">
+    <div class="items">
+    <!-- EVENTUALLY the search results will be populated from the database
+    and the display for each result will be done in a js function
+    and they will reside in this area for easy pagination -->
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+      <div>Item 6</div>
+      <div>Item 7</div>
+      <div>Item 8</div>
+      <div>Item 9</div>
+      <div>Item 10</div>
+      <div>Item 11</div>
+      <div>Item 12</div>
+      <div>Item x</div>
+    </div>
+    <div class="pager">
+      <div class="previousPage">&lsaquo;</div>
+      <div class="pageNumbers"></div>
+      <div class="nextPage">&rsaquo;</div>
+    </div>
+  </div>
+  <script>
+    $(function() {
+      $(".paginate").paginga({ /*use default options*/ });   
+      $(".paginate-page-2").paginga({ page: 2 });
+      $(".paginate-no-scroll").paginga({ scrollToTop: false });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <br>
   <div class="col-sm-12" style="background-color: lightgrey;">
-  <br>
+    <br>
   	<div class= "col-sm-6" style="max-width: 350px;">
   		<img class ="icon" src="https://ae01.alicdn.com/kf/HTB17QD6JFXXXXaOXVXXq6xXFXXXc/Spring-Summer-Calcetines-3D-Printed-Low-Cut-Ped-font-b-Socks-b-font-Girls-Cute-Kawaii.jpg">
   		<br>

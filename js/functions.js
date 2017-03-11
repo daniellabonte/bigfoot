@@ -1,26 +1,3 @@
-
-
-
-
-
-
-/*HEADER.PHP******************************************************************/ 
-	/*dynamic navbar**********************************************************/
-		//TODO This is not yet functional, i just found this code for future use
-		$(".nav a").click(function(){
-			 $(".nav").find(".active").removeClass("active");
-			 $(this).parent().addClass("active");
-		});
-
-/*INDEX.PHP*******************************************************************/
-	
-/**/
-
-	
-
-
-		
-
 /*jQUERY**********************************************************************/
 	$(document).ready(function(){
 
@@ -90,8 +67,6 @@
 		});
 
 
-
-
 		/**
 		 * When chkbx is toggle, this finds ratio of chkd to non chkd
 		 */
@@ -122,7 +97,10 @@
 			//get the check ratio to set button
 			CheckChecks();
 		});
-
 	/*****************************************************************FILTERS*/
+
+
+	
+
 
 	});
