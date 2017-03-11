@@ -11,51 +11,67 @@
 <!-- FILTER MENU -->
   <!-- Filter Button -->
   <div class="row justify-content-start">
-    <div  class="col-sm-3"></div>
-    <div id="filter-button" class="col-sm-2 filter-shadow"><center>Filter</center></div>
+    <!-- <div  class="col-sm-3"></div> -->
+    <div id="filter-button" class="col-sm-2 push-sm-2 filter-shadow" align="center">Filter</div>
   </div>
 
   <!-- Filter Options -->
   <div class="row justify-content-center">
-    <div class="col-sm-2"></div>
+    <div class="col-sm-3"></div>
     <div id="filter-div" class="col-sm-9 filter-shadow hide-filters">
       <form>
-          <div class="col-sm-4">
-          <b>Gender</b>
-            <ul>
-              <li><input type="checkbox" name="gender" value="male" checked>Male</li>
-              <li><input type="checkbox" name="gender" value="female" checked>Female</li>
-            </ul>
-          </div>
-          <div class="col-sm-4" style="border-left: solid; border-right: solid; border-color: black; border-width: 1px">
-            <div class="row">
-              <div class="col-sm-2"><b>Colour</b></div>
-            </div>
-            <div class="col-sm-6" style="padding: 0">
+          <div class="row">
+            <div class="col-sm-4">
+            <b>Gender</b>
               <ul>
-                <li><input type="checkbox" name="colour" value="red" checked>Red</li>
-                <li><input type="checkbox" name="colour" value="blue" checked>Blue</li>
-                <li><input type="checkbox" name="colour" value="white" checked>White</li>
+                <li><input type="checkbox" class="chkFilter" name="gender" value="male" checked>Male</li>
+                <li><input type="checkbox" class="chkFilter" name="gender" value="female" checked>Female</li>
               </ul>
             </div>
-            <div class="col-sm-6" style="padding: 0">
+            <div class="col-sm-4 divide-bars">
+              <div class="row">
+                <div class="col-sm-2"><b>Colour</b></div>
+              </div>
+              <div class="col-sm-6" style="padding: 0">
+                <ul>
+                  <li><input type="checkbox" class="chkFilter" name="colour" value="red" checked>Red</li>
+                  <li><input type="checkbox" class="chkFilter" name="colour" value="blue" checked>Blue</li>
+                  <li><input type="checkbox" class="chkFilter" name="colour" value="white" checked>White</li>
+                </ul>
+              </div>
+              <div class="col-sm-6" style="padding: 0">
+                <ul>
+                  <li><input type="checkbox" class="chkFilter" name="colour" value="grey" checked>Grey</li>
+                  <li><input type="checkbox" class="chkFilter" name="colour" value="black" checked>Black</li>
+                  <li><input type="checkbox" class="chkFilter" name="colour" value="pattern" checked>Pattern</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4">
+            <b>Availability</b>
               <ul>
-                <li><input type="checkbox" name="colour" value="grey" checked>Grey</li>
-                <li><input type="checkbox" name="colour" value="black" checked>Black</li>
-                <li><input type="checkbox" name="colour" value="pattern" checked>Pattern</li>
+                <li><input type="checkbox" class="chkFilter" name="stock" value="inStock" checked>In Stock</li>
               </ul>
             </div>
           </div>
-          <div class="col-sm-4">
-          <b>Availability</b>
-            <ul>
-              <li><input type="checkbox" name="stock" value="inStock" checked>In Stock</li>
-            </ul>
+          <br>
+          <div class="row justify-content-center">
+            <div class="col-12" align="center">
+              <input type='Button' id="btnCheck" value="Uncheck All">
+            </div>
           </div>
       </form>
     </div>
   </div>
 <!-- UNEM RETLIF -->
+
+
+
+
+
+
+
+
 
   <br>
   <div class="col-sm-12" style="background-color: lightgrey;">

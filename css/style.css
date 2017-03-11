@@ -25,7 +25,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 #filter-div {
-	padding: 1em 0.1em 1em 0.1em;
+	padding: 10px 15px;
 	margin: 0 50px 0 50px;
 	background-color: #aee6ee;	
 }
@@ -124,6 +124,13 @@ h1 h2 h3 h4 h5 h6 {
 	{
 		display: block;   /*hides the block*/
 	}
+
+	.divide-bars{
+		border-style: none solid none solid;
+		border-color: grey;
+		border-width: 1px;
+	}
+
 /************************************************************************LOGO*/
 
 /*BOOTSTRAP NAVBAR************************************************************/
@@ -146,6 +153,13 @@ h1 h2 h3 h4 h5 h6 {
 	@media (max-width: 767px) {
 		.hideSmall{display: block;}
 		.hideBig{display: none;}
+
+		.divide-bars{
+			border-style: solid none solid none;
+			border-color: grey;
+			border-width: 1px;
+		}
+
 	  .navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #000000;}
 	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {color: #aee6ee;}
