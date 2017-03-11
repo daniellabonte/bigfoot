@@ -25,6 +25,22 @@
 	$(document).ready(function(){
 
 	/*FILTERS*****************************************************************/
+		/*This is for the filters dropdown menu on products.php*/
+		
+		// Show/Hide the filter options
+		function ToggleFilters() {
+			if ( $('.hide-filters').is(":hidden")) {
+				$('.hide-filters').slideDown( "slow" );
+			} else {
+				HideOptions();
+			}
+		}
+
+		// Hides the dropdown filter options
+		function HideOptions() {
+			$('.hide-filters').slideUp("fast");
+		}
+
 		// Button Hover
 		$('#filter-button').hover(function() {
 			$(this).css('cursor','pointer');
@@ -35,16 +51,15 @@
 			ToggleFilters();
 		});
 
-		// Show/Hide the filter options
-		function ToggleFilters() {
-			if ( $('.hide-filters').is(":hidden")) {
-				$('.hide-filters').slideDown( "slow" );
-			} else {
-				$('.hide-filters').slideUp("fast");
-			}
-		}
+		// Calls HideOptions when any part of the page is clicked
+		$(document).click(function(){
+		  HideOptions();
+		});
 
-
+		// Safe to click inside the dropdown filter options
+		$("#filter-div, #filter-button").click(function(e){
+		  e.stopPropagation();
+		});
 	/*****************************************************************FILTERS*/
 
 	});
