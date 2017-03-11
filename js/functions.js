@@ -25,13 +25,14 @@
 	$(document).ready(function(){
 
 	/*FILTERS*****************************************************************/
-		$('#filterButton').click(function() { ShowFilters() });
+		$('.filterButton').click(function() { ShowFilters() });
 		
-		$('#filterButton').hover(function() {
+		$('.filterButton').hover(function() {
 			$(this).css('cursor','pointer');
     });
 
 		function ShowFilters() {
+			$('#filterDropDown').addClass('hideSmall');
 			console.log("Clicked yo");
 		};
 	/*****************************************************************FILTERS*/

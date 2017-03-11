@@ -1,71 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-
-	<!-- ICON -->
-	<link rel="shortcut icon" type="image/x-icon" href="./images/BIGfoot.ico" /> 
-
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- jQUERY -->
-	<!-- not sure if i need this as well as bootstrap jQuery -->
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-	<!-- PAGINATION -->
-	<script src="js/pagination/paginga.jquery.js"></script>
-	
-	<!-- LOCAL CSS -->
-	<link rel="stylesheet" type="text/css" href="css/buttons.css"/>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	
-	<!-- JAVASCRIPT -->
-	<script type='text/javascript' src='js/functions.js'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<title>test</title>
 </head>
 <body>
 
 <div class="container">
   <div class="row justify-content-start">
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
   </div>
   <div class="row justify-content-end">
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
   </div>
   <div class="row justify-content-around">
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
   </div>
   <div class="row justify-content-between">
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
-    <div class="col-4">
+    <div class="col-sm-4">
       One of two columns
     </div>
   </div>
