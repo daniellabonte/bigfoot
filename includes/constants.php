@@ -29,12 +29,13 @@
 		define('DATABASE_USER',     'ramkalawanr');
 		define('DATABASE_PASSWORD', 'greenday');
 	}
-	//Daniel named his database the same as on the server... so yeah
+	//For testing, its going on labonted's directory
+	//Subject to change depending on if we get group a directory on the opentech server
 	else
 	{
-		define('DATABASE_NAME',     'group19_db');
-		define('DATABASE_USER',     'group19_admin');
-		define('DATABASE_PASSWORD', 'bluespider202');
+		define('DATABASE_NAME',     'labonted_db');
+		define('DATABASE_USER',     'labonted');
+		define('DATABASE_PASSWORD', '100525741');
 	}
 
 /*Saltiness********************************************************************/
