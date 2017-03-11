@@ -24,8 +24,8 @@
 						<div class="col-sm-4">
 						<b>Gender</b>
 							<ul>
-								<li><input type="checkbox" class="chkFilter" name="gender" value="male" checked>Male</li>
-								<li><input type="checkbox" class="chkFilter" name="gender" value="female" checked>Female</li>
+								<li><input type="checkbox" class="chkFilter" name="gender" value="male">Male</li>
+								<li><input type="checkbox" class="chkFilter" name="gender" value="female">Female</li>
 							</ul>
 						</div>
 						<div class="col-sm-4 divide-bars">
@@ -34,31 +34,31 @@
 							</div>
 							<div class="col-sm-6" style="padding: 0">
 								<ul>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="red" checked>Red</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="blue" checked>Blue</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="white" checked>White</li>
+									<li><input type="checkbox" class="chkFilter" name="colour" value="red">Red</li>
+									<li><input type="checkbox" class="chkFilter" name="colour" value="blue">Blue</li>
+									<li><input type="checkbox" class="chkFilter" name="colour" value="white">White</li>
 								</ul>
 							</div>
 							<div class="col-sm-6" style="padding: 0">
 								<ul>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="grey" checked>Grey</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="black" checked>Black</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="pattern" checked>Pattern</li>
+									<li><input type="checkbox" class="chkFilter" name="colour" value="grey">Grey</li>
+									<li><input type="checkbox" class="chkFilter" name="colour" value="black">Black</li>
+									<li><input type="checkbox" class="chkFilter" name="colour" value="pattern">Pattern</li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-sm-4">
 						<b>Availability</b>
 							<ul>
-								<li><input type="checkbox" class="chkFilter" name="stock" value="inStock" checked>In Stock</li>
+								<li><input type="checkbox" class="chkFilter" name="stock" value="inStock">In Stock</li>
 							</ul>
 						</div>
 					</div>
 					<br>
 					<div class="row justify-content-center">
 						<div class="col-12" align="center">
-							<input type='Button' id="btnCheck" class="ghost-button btn-black" value="Uncheck All">
-							<input type='Button' id="btnApply" class="ghost-button btn-black" value="Apply">
+							<input type='button' id="btnCheck" class="ghost-button btn-black" value="null">
+							<input type='submit' id="btnApply" class="ghost-button btn-black" value="Apply">
 						</div>
 					</div>
 			</form>

@@ -66,6 +66,8 @@
 		  e.stopPropagation();
 		});
 
+		// Call this to load the button
+		CheckChecks();
 
 		/**
 		 * When chkbx is toggle, this finds ratio of chkd to non chkd
