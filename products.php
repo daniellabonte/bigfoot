@@ -8,15 +8,50 @@
 <?php include 'header.php'; ?>
 <br>
 
+<!-- Filter Button -->
 <div class="row justify-content-start">
   <div  class="col-sm-3"></div>
-  <div class="filterButton col-sm-2"><center>Filter</center></div>
+  <div id="filter-button" class="col-sm-2" style="max-width: 120px; padding:6px 0px 6px 0px; margin: 0 50px 0 50px"><center>Filter</center></div>
 </div>
 
-<div id="filterDropDown" class="row justify-content-center filterDropDown">
+<!-- Filter Options -->
+<div class="row justify-content-center">
   <div class="col-sm-2"></div>
-  <div class="filterButton col-sm-8">
-    
+  <div id="filter-div" class="col-sm-9 hide-filters">
+    <form>
+        <div class="col-sm-4">
+        <b>Gender</b>
+          <ul>
+            <li><input type="checkbox" name="gender" value="male">Male</li>
+            <li><input type="checkbox" name="gender" value="female">Female</li>
+          </ul>
+        </div>
+        <div class="col-sm-4" style="border-left: solid; border-right: solid; border-color: black; border-width: 1px">
+          <div class="row">
+            <div class="col-sm-2"><b>Colour</b></div>
+          </div>
+          <div class="col-sm-6" style="padding: 0">
+            <ul>
+              <li><input type="checkbox" name="colour" value="red">Red</li>
+              <li><input type="checkbox" name="colour" value="blue">Blue</li>
+              <li><input type="checkbox" name="colour" value="white">White</li>
+            </ul>
+          </div>
+          <div class="col-sm-6" style="padding: 0">
+            <ul>
+              <li><input type="checkbox" name="colour" value="grey">Grey</li>
+              <li><input type="checkbox" name="colour" value="black">Black</li>
+              <li><input type="checkbox" name="colour" value="pattern">Pattern</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+        <b>Availability</b>
+          <ul>
+            <li><input type="checkbox" name="stock" value="inStock">In Stock</li>
+          </ul>
+        </div>
+    </form>
   </div>
 </div>
 
