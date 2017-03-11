@@ -69,16 +69,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TESTING AREA ################################################### -->
+
 <?php 
 //Selects the listings from the database according to the dropdown
-$sql = 'SELECT itemName FROM tblProducts';
+$sql = 'SELECT * FROM tblProducts';
 
 //gets the results for the listings
 $result = pg_query(db_connect(), $sql);
-$asdf = pg_fetch_all_columns($result);
+$asdf = pg_fetch_all($result);
 
  ?>
-
 
 
 
@@ -88,23 +106,27 @@ $asdf = pg_fetch_all_columns($result);
 		and the display for each result will be done in a js function
 		and they will reside in this area for easy pagination -->
 			<?php
-			foreach ($asdf as $key => $value) {
-				echo '<div>'.$value.'</div>';
-			}
-			?>
-			<div>Item 1</div>
+			foreach ($asdf as $key => $value) { ?>
+					<div>
+					<!-- TODO: Alrighty, so issue is, when I try to put the formatted product display box in the pagination, it goes all wacky... -->
+						<img src="images/products/<?php echo $value['itemimage']; ?>" width="150px" height="150px">
+						<?php echo "<br>".$value['itemname']; ?>
+						<?php echo "<br>$".$value['itemprice']; ?>
+					</div>
+			<?php } ?>
+
 			<div>Item 2</div>
 			<div>Item 3</div>
 			<div>Item 4</div>
 			<div>Item 5</div>
 			<div>Item 6</div>
 			<div>Item 7</div>
-			<div>Item 8</div>
-			<div>Item 9</div>
-			<div>Item 10</div>
-			<div>Item 11</div>
-			<div>Item 12</div>
-			<div>Item x</div>
+			<!-- <div>Item 8</div> -->
+			<!-- <div>Item 9</div> -->
+			<!-- <div>Item 10</div> -->
+			<!-- <div>Item 11</div> -->
+			<!-- <div>Item 12</div> -->
+			<!-- <div>Item x</div> -->
 		</div>
 		<div class="pager">
 			<div class="previousPage">&lsaquo;</div>
@@ -120,6 +142,7 @@ $asdf = pg_fetch_all_columns($result);
 		});
 	</script>
 
+<!-- TESTING AREA ################################################### -->
 
 
 
@@ -151,9 +174,7 @@ $asdf = pg_fetch_all_columns($result);
 			<p>$12.00</p>
 			<button type="button" class="btn btn-primary">Buy</button>
 		</div>
-	<br>
-
-
+		<br>
 	</div>
 
 	<br>
