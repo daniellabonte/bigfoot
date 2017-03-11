@@ -64,6 +64,7 @@
 <div class= "col-sm-6" style="max-width: 350px;">
 <img class ="icon" src="http://www.codingjohn.com/Catalog/Images/DefaultProfilePic.png">
 <br>
+<br>
 </div>
 <div class ="col-sm-6">
 <h3>Ryan R.</h3>

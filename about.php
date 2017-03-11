@@ -21,9 +21,9 @@
 
 <!-- CONTENT HERE -->
 <br>
-<center><p>Have you ever struggled to find a good pair of socks to buy? Have you ever struggled with uncomfortable socks that just dont fit right? 
+<center><h2>Have you ever struggled to find a good pair of socks to buy? Have you ever struggled with uncomfortable socks that just dont fit right? 
 Well fear no more, this website is dedicated to provding you the customer with a vast variety of quality socks for an affordable price.
-Gone are the days of reaching into your drawers, and pulling out unwanted socks. You can thank us whenever your comfortably walking around, its our pleasure. </p></center>
+Gone are the days of reaching into your drawers, and pulling out unwanted socks. You can thank us whenever your comfortably walking around, its our pleasure. </h2></center>
 <br>
 
 <?php include 'footer.php'; ?>

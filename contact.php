@@ -7,12 +7,12 @@
 		<center><h3>Inquery Type</h3></center>
 		<ul>
 		<div class="col-sm-6">
-			<li><input type="radio" name="Questions" value="Questions">Question</li>
-			<li><input type="radio" name="Questions" value="Comment">Comment</li>
+			<li><input type="radio" name="Questions" value="Questions"> Question</li>
+			<li><input type="radio" name="Questions" value="Comment"> Comment</li>
 		</div>
 		<div class="col-sm-6">
-			<li><input type="radio" name="Questions" value="Concern">Concern</li>
-			<li><input type="radio" name="Questions" value="Shipping">Shipping</li>
+			<li><input type="radio" name="Questions" value="Concern"> Concern</li>
+			<li><input type="radio" name="Questions" value="Shipping"> Shipping</li>
 			</div>
 		</ul>
 	</div>
