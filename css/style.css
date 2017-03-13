@@ -12,35 +12,40 @@ h1 h2 h3 h4 h5 h6 {
 	font-family:"Montserrat ExtraLight", sans-serif;
 }
 
+/*FILTER MENU*****************************************************************/
+	.hide-filters {
+		display: none;
+	}
 
-.hide-filters {
-	display: none;
+	#filter-button {
+		max-width: 120px;
+		padding:6px 0px 6px 0px;
+		margin: 0 50px 0 50px;
+		background-color: #aee6ee;
+	}
+
+	#filter-div {
+		padding: 10px 15px;
+		margin: 0 50px 0 50px;
+		background-color: #aee6ee;	
+	}
+
+	.filter-shadow {
+		box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.1);
+	}
+
+
+
+
+/**/
+
+
+.div-click {
+	
 }
 
-#filter-button {
-	max-width: 120px;
-	padding:6px 0px 6px 0px;
-	margin: 0 50px 0 50px;
-	background-color: #aee6ee;
-}
 
-#filter-div {
-	padding: 10px 15px;
-	margin: 0 50px 0 50px;
-	background-color: #aee6ee;	
-}
-
-.filter-shadow {
-	box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.1);
-}
-
-
-
-
-
-
-
-
+/**/
 
 
 

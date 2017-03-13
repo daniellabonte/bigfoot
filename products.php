@@ -19,7 +19,7 @@
 	<div class="row justify-content-center">
 		<div class="col-sm-3"></div>
 		<div id="filter-div" class="col-sm-9 filter-shadow hide-filters">
-			<form>
+			<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 					<div class="row">
 						<div class="col-sm-4">
 						<b>Gender</b>
@@ -101,18 +101,28 @@ $asdf = pg_fetch_all($result);
 
 
 	<div class="paginate 2">
+		<div class="pager">
+			<div class="previousPage">&lsaquo;</div>
+			<div class="pageNumbers"></div>
+			<div class="nextPage">&rsaquo;</div>
+		</div>
 		<div class="items">
 		<!-- EVENTUALLY the search results will be populated from the database
 		and the display for each result will be done in a js function
 		and they will reside in this area for easy pagination -->
 			<?php
 			foreach ($asdf as $key => $value) { ?>
-					<div>
-					<!-- TODO: Alrighty, so issue is, when I try to put the formatted product display box in the pagination, it goes all wacky... -->
-						<img src="images/products/<?php echo $value['itemimage']; ?>" width="150px" height="150px">
-						<?php echo "<br>".$value['itemname']; ?>
-						<?php echo "<br>$".$value['itemprice']; ?>
+				
+					<div class="row justify-content-center div-click" style="background-color: lightgrey;">
+						<div class="col-sm-4" style="padding: 0;">
+							<img src="images/products/<?php echo $value['itemimage']; ?>" width="100%">
+						</div>
+						<div class="col-sm-4" style="padding: 0;">
+							<h4><?php echo "<br>".$value['itemname']; ?></h4>
+							<p><?php echo "<br>$".$value['itemprice']; ?></p>
+						</div>
 					</div>
+				
 			<?php } ?>
 
 			<div>Item 2</div>
@@ -161,7 +171,7 @@ $asdf = pg_fetch_all($result);
 
 
 
-	<br>
+	<!-- <br>
 	<div class="col-sm-12" style="background-color: lightgrey;">
 		<br>
 		<div class= "col-sm-6" style="max-width: 350px;">
@@ -193,7 +203,7 @@ $asdf = pg_fetch_all($result);
 			<p>$12.00</p>
 			<button type="button" class="btn btn-primary">Buy</button>
 		</div>
-	<br>
+	<br> -->
 
 
 	</div>
