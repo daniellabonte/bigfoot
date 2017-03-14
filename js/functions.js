@@ -145,8 +145,7 @@
 			$(this).css('cursor','pointer');
 		});
 
-		$('.div-click').click(function(){ 
-			window.open("product.php?id=" + this.id, "_self");});
+		$('.div-click').click(function(){window.open("product.php?id=" + this.id, "_self");});
 	/**********************************************************PRODUCT DISPLAYS*/
 
 
