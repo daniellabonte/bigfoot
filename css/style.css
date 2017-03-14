@@ -12,6 +12,10 @@ h1 h2 h3 h4 h5 h6 {
 	font-family:"Montserrat ExtraLight", sans-serif;
 }
 
+p{
+    line-height: 1;
+}
+
 /*FILTER MENU*****************************************************************/
 	.hide-filters {
 		display: none;
@@ -192,8 +196,8 @@ h1 h2 h3 h4 h5 h6 {
 
 
 /*PAGINATION******************************************************************/
-	.items div {border: 1px solid gray;	margin: 5px;padding: 10px;}
-	.pager div{float: left;	border: 1px solid gray;margin: 5px;padding: 10px;}
+	.items div {margin: 5px;padding: 10px;}
+	.pager div{float: left;	border: 1px solid gray;margin: 5px;padding: 10px 20px;}
 	.pager div.disabled{opacity: 0.25;}
 	.pager .pageNumbers a{display: inline-block;padding: 0 10px;color: gray;}
 	.pager .pageNumbers a.active{color: orange;}

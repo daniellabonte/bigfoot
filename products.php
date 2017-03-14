@@ -24,8 +24,9 @@
 						<div class="col-sm-4">
 						<b>Gender</b>
 							<ul>
-								<li><input type="checkbox" class="chkFilter" name="gender" value="male">Male</li>
-								<li><input type="checkbox" class="chkFilter" name="gender" value="female">Female</li>
+								<li><input type="checkbox" class="chkFilter" name="gender[]" value="male">Male</li>
+								<li><input type="checkbox" class="chkFilter" name="gender[]" value="female">Female</li>
+								<li><input type="checkbox" class="chkFilter" name="gender[]" value="children">Children</li>
 							</ul>
 						</div>
 						<div class="col-sm-4 divide-bars">
@@ -34,23 +35,23 @@
 							</div>
 							<div class="col-sm-6" style="padding: 0">
 								<ul>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="red">Red</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="blue">Blue</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="white">White</li>
+									<li><input type="checkbox" class="chkFilter" name="colour[]" value="red">Red</li>
+									<li><input type="checkbox" class="chkFilter" name="colour[]" value="blue">Blue</li>
+									<li><input type="checkbox" class="chkFilter" name="colour[]" value="white">White</li>
 								</ul>
 							</div>
 							<div class="col-sm-6" style="padding: 0">
 								<ul>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="grey">Grey</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="black">Black</li>
-									<li><input type="checkbox" class="chkFilter" name="colour" value="pattern">Pattern</li>
+									<li><input type="checkbox" class="chkFilter" name="colour[]" value="grey">Grey</li>
+									<li><input type="checkbox" class="chkFilter" name="colour[]" value="black">Black</li>
+									<li><input type="checkbox" class="chkFilter" name="colour[]" value="pattern">Pattern</li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-sm-4">
 						<b>Availability</b>
 							<ul>
-								<li><input type="checkbox" class="chkFilter" name="stock" value="inStock">In Stock</li>
+								<li><input type="checkbox" class="chkFilter" name="stock[]" value="inStock">In Stock</li>
 							</ul>
 						</div>
 					</div>
@@ -71,13 +72,71 @@
 <!-- TESTING AREA ################################################### -->
 
 <?php 
+
+	if (isset($_POST)) {
+		//Start the sql select statement
+		$sql = "SELECT * FROM tblProducts";
+
+		//No checkboxes, get all the products from the database
+		if(!isset($_POST['gender']) && !isset($_POST['colour']) && !isset($_POST['stock'])){
+			echo "NO CHECKBOXES SELECTED";
+			$sql .= ";";
+		}
+		//Otherwise, build sql for selected items
+		else{
+			$sql .= " WHERE ";                //Add where statement
+			$and = false;                     //Flag that tells whether to add "AND" to the sql
+
+			//Add gender selection
+			if (isset($_POST['gender']))
+			{
+				if ($and) { $sql .= " AND "; }  //If this is first in the WHERE, dont add "AND" in the sql
+				else      { $and = true; }      //But add "AND" to all the following
+				$sql .= "(";                    //Open bracket for all the OR's per category of filter
+				$or = false;                    //Set flag for adding "OR's" into the statement
+				//Loop through all the checkboxes options 
+				foreach ($_POST['gender'] as $key => $value) {
+					if ($or) { $sql .= " OR "; }  //If this is first in the brackets, dont add "OR" in the sql
+					else     { $or = true; }      //But add "OR" to all the following
+					$sql .= "categoryID = '" . substr($value, 0, 3) . "'";	//Add the actual test statement	
+				}
+				$sql .= ")";                    //Close the bracket
+			}
+			if (isset($_POST['colour']))
+			{				
+				if ($and) { $sql .= " AND "; }
+				else      { $and = true; }
+				$sql .= "(";
+				$or = false;
+				foreach ($_POST['colour'] as $key => $value) {
+					if ($or) { $sql .= " OR "; }
+					else     { $or = true; }
+					$sql .= "colourID = '" . substr($value, 0, 3) . "'";		
+				}
+				$sql .= ")";
+			}
+			if (isset($_POST['stock']))
+			{				
+				if ($and) { $sql .= " AND "; }
+				else      { $and = true; }
+				$sql .= "(";
+				$or = false;
+				foreach ($_POST['stock'] as $key => $value) {
+					if ($or) { $sql .= " OR "; }
+					else     { $or = true; }
+					$sql .= "stockAmount > 0";		
+				}
+				$sql .= ")";
+			}
+		}
+	}
+
 //Selects the listings from the database according to the dropdown
-$sql = 'SELECT * FROM tblProducts';
+
 
 //gets the results for the listings
 $result = pg_query(db_connect(), $sql);
-$asdf = pg_fetch_all($result);
-
+$arrProducts = pg_fetch_all($result);
  ?>
 
 
@@ -89,18 +148,20 @@ $asdf = pg_fetch_all($result);
 			<div class="nextPage">&rsaquo;</div>
 		</div>
 		<div class="items">
-		<!-- EVENTUALLY the search results will be populated from the database
-		and the display for each result will be done in a js function
-		and they will reside in this area for easy pagination -->
+
 			<?php
-			foreach ($asdf as $key => $value) { ?>
+			if (pg_fetch_all_columns($result) == Array()) {
+				echo "<center>No results</center>";
+			} else {
 				
-					<div class="row justify-content-center div-click" style="background-color: lightgrey;">
+			foreach ($arrProducts as $key => $value) { ?>
+				
+					<div id="<?php echo $value['itemid']; ?>" class="row justify-content-center div-click" style="border-color: #bbb; border-style: solid; border-width: 1px 0 0 0;">
 						<div class="col-sm-4" style="padding: 0;">
 							<img src="images/products/<?php echo $value['itemimage']; ?>" width="100%">
 						</div>
 						<div class="col-sm-4" style="padding: 0;">
-							<h4><?php echo "<br>".$value['itemname']; ?></h4>
+							<h4 style="margin-bottom: 0;"><?php echo "<br>".$value['itemname']; ?></h4>
 							<p><?php echo "<br>$".$value['itemprice']; ?></p>
 							<a  href="itemPage.php" class= "ghost-button">Buy</a>
 							<!-- Store the item id in the session -->
@@ -109,20 +170,8 @@ $asdf = pg_fetch_all($result);
 						</div>
 					</div>
 				
-			<?php } ?>
+			<?php }} ?>
 
-			<div>Item 2</div>
-			<div>Item 3</div>
-			<div>Item 4</div>
-			<div>Item 5</div>
-			<div>Item 6</div>
-			<div>Item 7</div>
-			<!-- <div>Item 8</div> -->
-			<!-- <div>Item 9</div> -->
-			<!-- <div>Item 10</div> -->
-			<!-- <div>Item 11</div> -->
-			<!-- <div>Item 12</div> -->
-			<!-- <div>Item x</div> -->
 		</div>
 		<div class="pager">
 			<div class="previousPage">&lsaquo;</div>
