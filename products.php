@@ -68,24 +68,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- TESTING AREA ################################################### -->
 
 <?php 
@@ -120,6 +102,10 @@ $asdf = pg_fetch_all($result);
 						<div class="col-sm-4" style="padding: 0;">
 							<h4><?php echo "<br>".$value['itemname']; ?></h4>
 							<p><?php echo "<br>$".$value['itemprice']; ?></p>
+							<a  href="itemPage.php" class= "ghost-button">Buy</a>
+							<!-- Store the item id in the session -->
+
+							session
 						</div>
 					</div>
 				
@@ -153,22 +139,6 @@ $asdf = pg_fetch_all($result);
 	</script>
 
 <!-- TESTING AREA ################################################### -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	<!-- <br>
@@ -209,9 +179,6 @@ $asdf = pg_fetch_all($result);
 	</div>
 
 	<br>
-
-
-
 
 
 	<style type="text/css">
