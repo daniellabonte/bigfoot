@@ -70,11 +70,10 @@
 			var arrCheckState = JSON.parse(localStorage.getItem("arrCheckState"));
 
 			// Set each checkbox to the appropriate state
-			for (var i = 0; i < chkbx.length; i++)
-				chkbx[i].checked = arrCheckState[i];
+			if (arrCheckState != null)
+				for (var i = 0; i < chkbx.length; i++)
+					chkbx[i].checked = arrCheckState[i];			
 		}
-
-		
 
 		// Array of filter checkboxes 
 		var chkbx = document.getElementsByClassName("chkFilter");
