@@ -15,7 +15,6 @@ function FilterResults() {
 
 		//No checkboxes, get all the products from the database
 		if(!isset($_POST['gender']) && !isset($_POST['colour']) && !isset($_POST['stock'])){
-			echo "NO CHECKBOXES SELECTED";
 			$sql .= ";";
 		}
 		//Otherwise, build sql for selected items
